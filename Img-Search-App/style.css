@@ -1,0 +1,90 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Styling for the main title */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #444;
+}
+
+/* Styling the form */
+form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Styling the input field */
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px; /* Adds spacing when wrapping */
+}
+
+/* Styling the search button */
+button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #5cb85c;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+button[type="submit"]:hover {
+    background-color: #4cae4c;
+}
+
+/* Main section styling */
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+/* Styling the image container */
+.img-container {
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* No photo found text styling */
+.img-container h2 {
+    color: #999;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    input[type="text"] {
+        width: 100%; /* Full width on small screens */
+        margin-right: 0;
+    }
+
+    button[type="submit"] {
+        width: 100%; /* Full width on small screens */
+    }
+
+    .img-container {
+        width: 90%; /* Reduce width slightly for smaller screens */
+        padding: 15px; /* Adjust padding */
+    }
+}
